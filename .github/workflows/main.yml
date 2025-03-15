@@ -18,8 +18,8 @@ jobs:
         run : python feed.py
       - name: Push Repo
         run: |
-          git config user.name github-actions
-          git config user.emain github-actions@github.com
+          git config user.name Praveen-751
+          git config user.email chinnamsettipraveenkumar@gmail.com
           git add .
-          git commit -m "Modified Fee"
+          git commit -m "Modified Feed"
           git push
