@@ -1,19 +1,37 @@
-# The Future in Tech
+# RSS Podcast Generator
 
-<img src="https://raybo.org/tfit-feed/images/artwork.jpg" width="250">
+## Overview
 
-The [Future in Tech](https://go.raybo.org/tfit) is a weekly series powered by [LinkedIn Learning](https://www.linkedin.com/learning/) hosted by Senior Staff Instructor [Ray Villalobos](https://www.linkedin.com/in/planetoftheweb).
+The RSS Podcast Generator is an automated tool that generates podcast RSS feeds from structured YAML files. It utilizes a separate repository for Docker builds and GitHub Actions workflows for CI/CD automation.
 
-You can [watch it on LinkedIn](https://go.raybo.org/tfit-episodes) every Thursday at 2pm ET, 11am PT. The goal of this series is to spark conversations, provide practical tips and resources to help developers work, learn, and tackle challenges related to working in the technology industry.
+## Features
 
-We're talking about Generative AI tools like ChatGPT, Dall-E*2, Hugging Face by talking to some of the leaders delivering the tools, strategies and technologies that make working in technology exciting. We'll discuss how they broke into technology, business strategies, ethical concerns and technical skills.
+- Generates RSS feeds from YAML configurations.
 
-You have a chance to hear from people who are not just talking about, but building the next generation tools like Open AI and leaders who've worked for and with Fortune 500 companies like Microsoft, Google, LinkedIn,  IBM,  Open AI and more.
+- Uses a separate repository for building and deploying.
 
----
-## More Info
-- [The Future in Tech Page](https://go.raybo.org/tfit)
-- [Episode Guide](https://go.raybo.org/tfit-episodes)
-- [YouTube Playlist](https://go.raybo.org/tfit-youtube)
-- [Podcast Feed - Audio Only](https://go.raybo.org/tfit-feed-audio)
-- [Episode Newsletter](https://go.raybo.org/tfit-newsletter)
+- Automates deployment with GitHub Actions.
+
+- Supports cross-repository workflows.
+
+## Usage
+
+1. Update YAML Config: Edit the podcast.yaml file to define your podcast metadata and episodes.
+
+2. Trigger CI/CD Workflow: Commit changes to the repository to trigger the GitHub Actions pipeline.
+
+3. Automated Deployment: The linked deployment repository will build and deploy the updated RSS feed.
+
+## Repository Structure
+
+- CI/CD Repo: Contains the GitHub Actions workflows.(https://github.com/Praveen-751/RSS_Podcast)
+
+- Deployment Repo: Holds the Dockerfile and entrypoint scripts for processing YAML files. (https://github.com/Praveen-751/podcast-generator)
+
+## Contributing
+
+Feel free to submit pull requests and report issues via GitHub.
+
+## Contact
+
+For support, reach out at praveenkumar161101@gmail.com.
